@@ -1,10 +1,17 @@
 # Overview
-Miscellaneous tools and scripts. See individual files for descriptions.
+Miscellaneous tools and scripts.
+
+## Process management
+ * **portkill**: Kills processes based on TCP/UDP port they are listening on.
+
+## Log file munging
+ * **by_time.py**: Selects time range from a log file. Lines with no time (e.g. stack traces) are presumed to have occurred at the time of the preceding line.
+ * **token_indenter.py**: Indents lines differently based on presence of tokens. Useful for providing visual overview of log files with output from concurrent threads.
 
 # License
 All files are distributed under the Simplified BSD License:
 
-Copyright 2011 Lorrin Nelson. All rights reserved.
+Copyright 2011-2012 Lorrin Nelson. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are
 permitted provided that the following conditions are met:
